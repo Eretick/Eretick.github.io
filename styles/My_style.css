@@ -1,8 +1,7 @@
-.downlBtn {
-	background:#5c7e10;
-	color: #ffffff;	
-	border:0px;
-	margin:5px;
+body{
+	background-color: #1b2838;
+	width: 100%;
+	align-items: center;
 }
 
 p {
@@ -13,25 +12,29 @@ h1 {
 	color:#ffffff;
 }
 
-.nav_table {
+.downlBtn {		/* Кнопка загрузки стима в меню*/
+	background:#5c7e10;
+	color: #ffffff;	
+	border:0px;
+	margin:5px;
+}
+
+.nav_table {	/* Блок верхнего меню*/
 	display : inline-table;
 	background-color : #171a21;
 	width : 100%;
 	height: 80px;
-	
 	border-collapse: collapse;
 	width: 100%;
-	
-	
 }
 
-.nav-row {
+.nav-row {		/* Основная строка верхнего меню*/
 	display: table-row;
 	width: 100%;
 	height: auto;
 }
 
-.nav_cell-1 {
+.nav_cell-1 {	/* Ячейка лого стим в хедере*/
 	display: table-cell;
 	width: 20%;
 	vertical-align: middle;
@@ -39,31 +42,33 @@ h1 {
 	height: 80px;
 }
 
-.nav_cell-2 {
+.nav_cell-2 {	/* Список меню в хедере*/
 	display: table-cell;
 	width: 60%;
 	height: auto;
 	vertical-align: middle;
 }
 
-.nav_cell-3 {
+.nav_cell-3 {	/* Блок с кнопкой и войти*/
 	display: table-cell;
 	width: 20%;
 	vertical-align: top;
 	height: inherit;
 }
 
-.nav_menu {
+.nav_menu {		/* Блок со списком меню*/
 	margin: 0;
   	padding: 0;
   	height: inherit;
+	position: relative;
 }
 .unsign {
 	display: inline;
-	position: relative;
+	
+	text-decoration: none;
 }
 
-.nav_submenu{
+.nav_submenu{	/* Блок с выпадающим главным субменю*/
 	display: none;
 	list-style: none;
 	position: absolute;
@@ -80,17 +85,12 @@ h1 {
 
 .nav_menu:hover .nav_submenu{
 	display: block;	
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	border-radius: 5px;
 }
 
-body{
-	background-color: #1b2838;
-	width: 100%;
-}
-
-.rows{
-	display: table-row-group;
-	width: 100%;
-}
 .main_container {
 	margin-top:10px;
 	margin-bottom: 10px;
@@ -98,20 +98,42 @@ body{
 	margin-right: 100px;
 }
 
-.row-2-1 {
+.table-2 {
+	display:table;
+	width: 100%;
+	height: 600px;
+	border:5px solid black;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.row {
 	display: table-row;
-	border-bottom:4px solid black;
+	display: inline;
+	margin: 0;
+	
+}
+
+.row-2-1{
+	border-bottom: 2px solid black;
+	
+}
+
+.cell-2-1
+{
+	margin-right: 5px;
+}
+
+.cell-2-1:hover{
+	background-color: darkcyan;
+	
 }
 
 .cell {
+	 
 	display:table-cell;
-	padding-right: 5px;
-	padding-left: 5px;
-	padding-bottom: 2px;
-}
-
-.row2-1:hover{
-	background: #6B47E3;
+	display:inline;
 }
 
 .cell_active {
@@ -121,21 +143,24 @@ body{
 	border-right: 1px solid #67c1f5;
 }
 
-.table_2 {
-	display:table;
-}
-
-.row-2-2{
-	display: table-row;
-	width:inherit;
-}
-
-.text-cell {
-	display:table-cell;
-	text-align: right;
-	width:30%;
-}
 .big-cell {
 	display: table-cell;
-	width:70%;
+	width:600px;
+	border: 1px solid;
+	height: inherit;
+}
+
+.table-2-right
+{
+	position: absolute;
+	width: 300px;
+	height: inherit;
+	text-align: right;
+}
+
+.table-2-menu-bottom li
+{
+	display: inline; 
+	margin: 5px;
+	float: left;
 }
