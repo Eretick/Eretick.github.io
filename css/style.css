@@ -67,34 +67,56 @@ h1 {
 	margin: 0;
   	padding: 0;
   	height: inherit;
-	position: relative;
+	
 }
 
 .unsign {
 	display: inline;
 	text-decoration: none;
+	color: #dfdfdf;  
+	padding-right: 5px;
 }
 
-.nav_submenu{	/* Блок с выпадающим главным субменю*/
+.hlist
+{
+	display: inline;
+	position: relative;
+}
+.shop, .community, .about, .support
+{
+	position: relative;
+	font-size: 20px;
+}
+
+.nav_submenu_shop, .nav_submenu_community		/* Блок с выпадающим главным субменю*/
+{	
 	display: none;
 	position: absolute;
 	list-style: none;
 	background: #171a21;
 	padding:10px;
-}
-
-.nav_submenu a { /*Стиль ссылок подменю*/
-	text-decoration: none;
-}
-.nav_submenu p { /*Стиль ссылок подменю*/
 	font-size: 12px;
 }
 
-.shop :hover .nav_submenu{ /*Появление подменю*/
+.nav_submenu a 		/*Стиль ссылок подменю*/
+{ 
+	text-decoration: none;
+}
+.nav_submenu p 		/*Стиль ссылок подменю*/
+{ 
+	font-size: 12px;
+}
+
+
+.nav_menu>.shop:hover .nav_submenu_shop /*Появление подменю*/
+{ 
 	display: block;	
-	border-top: 1px solid white;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	
+}
+
+.nav_menu>.community:hover .nav_submenu_community /*Появление подменю*/
+{ 
+	display: block;	
 	
 }
 
