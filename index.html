@@ -1,138 +1,49 @@
 ﻿<!doctype html>
 <html>
 <head>
-		<!-- След. 3 тега должны быть первыми в head для нормальной работы бутстрапа -->
-		<meta charset="utf-8">
-   		<title>Steam WorkShop Main Lite</title>
-		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-  		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-		<script async src="js/script.js"></script> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JS-test</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 	
-	<!-- Верхнее меню -->
-<div class="nav_table">
-		<div class="nav_row">
-			<div class="nav_cell-1">
-				<a href="http://store.steampowered.com/">
-					<img class="steam-logo" src="img/logo-steam.png" alt="logo">	
-				</a>
-			</div>
-			<div class="nav_cell-2">
-				<ul class="nav_menu">
-					<li class="hlist shop"><a class="unsign" href="http://store.steampowered.com/">МАГАЗИН</a>
-						<ul class="nav_submenu_shop"> 
-							<li><a href="http://store.steampowered.com/"><p>ПОПУЛЯРНОЕ</p></a></li>
-							<li><a href="http://store.steampowered.com/explore/"><p>ВВЕДЕНИЕ</p></a></li>
-							<li><a href="http://store.steampowered.com/curators/"><p>КУРАТОРЫ</p></a></li>
-							<li><a href="https://steamcommunity.com/my/wishlist/"><p>СПИСОК ЖЕЛАЕМОГО</p></a></li>
-							<li><a href="http://store.steampowered.com/news/"><p>НОВОСТИ</p></a></li>
-							<li><a href="http://store.steampowered.com/stats/"><p>СТАТИСТИКА</p></a></li>
-						</ul>
-						</li>
-					<li class="hlist community"><a class="unsign" href="https://steamcommunity.com/">СООБЩЕСТВО</a>
-						<ul class="nav_submenu_community"> 
-							<li><a href="https://steamcommunity.com/"><p>ГЛАВНАЯ</p></a></li>
-							<li><a href="https://steamcommunity.com/"><p>ОБСУЖДЕНИЕ</p></a></li>
-							<li><a href="https://steamcommunity.com/workshop/"><p>МАСТЕРСКАЯ</p></a></li>
-							<li><a href="https://steamcommunity.com/market/"><p>ТОРГОВАЯ ПЛОЩАДКА</p></a></li>
-							<li><a href="https://steamcommunity.com/market/"><p>ТРАНСЛЯЦИИ</p></a></li>
-						</ul>
-					</li>
-					<li class="hlist about"><a class="unsign" href="http://store.steampowered.com/about/">О STEAM</a></li>
-					<li class="hlist support"><a class="unsign" href="https://help.steampowered.com/ru/">ПОДДЕРЖКА</a>
-					</li>
-				</ul>
-			</div>
-			<div class="nav_cell-3">
-				<button class="downlBtn" style="float: left; margin-right: 10px;">
-					<a class="unsign" style="color: #dfdfdf;" href="http://store.steampowered.com/about/">
-					<input type="image" src="img/btn_download_steam.png">
-					Установить Steam
-				</button>
-				</a>
-				<a href="https://steamcommunity.com/login/home/?goto=app%2F253250%2Fworkshop%2F"><p style="margin-top:5px">Войти</p></a>
-			</div>					
-		</div>
-	</div>
+	<form class="form">
+		<legend>Консольные задачка</legend>
+		<button id="console-task" class="btn btn-success">Консоль</button>
+	</form>
 	
-	<div class="main_container">
+	<form class="form">
+		<legend>Вызов метода по кнопке</legend>
+		<button id="alert-task" class="btn btn-danger">Alert по нажатию</button>
+	</form>
 	
-		<div class="left-menu">
-			<div class="left-menu-item"><img src="img/steamcards_promo_02.png" style="width: 100%;">
-				<p>ПОДАРОЧНЫЕ КАРТЫ</p>
-			</div>
-			<div class="left-menu-item"><a>Теперь и в магазине Steam</a></div>
-			<div class="left-menu-item"><p>РЕКОМЕНДУЕТСЯ</p></div>
-			<div class="left-menu-item"><a>Друзьями</a></div>
-			<div class="left-menu-item"><a>Кураторами</a></div>
-			<div class="left-menu-item"><a>По меткам</a></div>
-			<div class="left-menu-item"><p>СПИСОК РЕКОММЕНДАЦИЙ</p></div>
-			<div class="left-menu-item"><a>Рекоммендации</a></div>
-			<div class="left-menu-item"><a>Новинки</a></div>
-			<div class="left-menu-item"><p>ОБЗОР КАТЕГОРИЙ</p></div>
-			<div class="left-menu-item"><a>Лидеры продаж</a></div>
-			<div class="left-menu-item"><a>Недавно обновленные</a></div>
-			<div class="left-menu-item"><a>Новинки</a></div>
-			<div class="left-menu-item"><a>Скоро выйдут	</a></div>
-			<div class="left-menu-item"><a>Скидки</a></div>
-			<div class="left-menu-item"><a>Виртуальная реальность</a></div>
-			<div class="left-menu-item"><a>Поддержка Steam Controller</a></div>		
+	<form class="form">
+		<legend>Отображение элементов по количеству</legend>
+		<div class="form-group" style="width: 300px;">
+ 		<label for="sel1">Select list:</label>
+  		<select class="form-control" id="sel1" style="width: 40px; padding: 0;">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+ 		</select>
+		<button class="btn btn-primary">Отображение по количеству</button>
 		</div>
-
-		<div class="main_content"> 
-			
-			<div style="flex-direction: column; align-self: flex-end;">
-				<button class="main_content_item whishlist"><p>СПИСОК ЖЕЛАЕМОГО</p></button>
-			</div>
-			
-			
-				<div class="main_content_item shop_menu">
-					<div class="shop_menu_name 1"><a href="#">Ваш магазин</a></div><!-- -->
-					<div class="shop_menu_name 2"><a href="#">Игры</a></div>
-					<div class="shop_menu_name 3"><a href="#">Программы</a></div>
-					<div class="shop_menu_name 4"><a href="#">Устройства</a></div>
-					<div class="shop_menu_name 5"><a href="#">Видео</a></div>
-					<div class="shop_menu_name 6"><a href="#">Новости</a></div>
-					<div class="shop_menu_name 7">
-						<div class="game_search_box">
-							<input type="text" id="search_game_field">
-							<button style="background: url(img/btn_search.png); height: 25px; width:25px; border: none;"></button>
-						</div>
-					</div>
-				</div>
-			
-			
-			<p class="main_content_item area_name">ПОПУЛЯРНОЕ И РЕКОМЕНДУЕМОЕ</p>
-					
-		<!-- Моя карусель -->
-			<div class="main_content_item carousel-container">
-				<div class="carousel-1">
-					<img class="carousel-img" src="img/carousel/1.jpg">
-					<div class="left">
-						<img class="caruosel_arrow" src="img/left.png">
-					</div>
-					<div class="right">
-						<img class="caruosel_arrow" src="img/right.png">
-					</div>
-				</div>
-			</div> <!-- Конец карусели -->
-			
-			<div class="main_content_item content_area_name">
-				<p class="area_name" >СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</p>
-				<a class="more" href="#">ПОСМОТРЕТЬ ВСЕ</a>
-			</div>
-			
+	</form>
+	
+	<form class="form">
+		<legend>Переход по страницам в текущем окне</legend>
+		<button class="btn btn-info">Переход на страницу 2</button>
+	</form>
 		
-		</div> <!-- Конец главной ленты -->
 		
-	</div>
+		
 	
 </body>
-	
 </html>
+<script type="text/javascript" src="js/1.js"></script>
