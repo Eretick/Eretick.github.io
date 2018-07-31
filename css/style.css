@@ -1,0 +1,158 @@
+/* CSS Document */
+body {
+	background-color: white;
+	
+}
+
+nav{
+	top: 0%; /* Иначе будет отступ сверху */
+	position: fixed; 
+    left: 1; bottom: 1; /* Левый верхний угол */
+    padding: 10px; 
+    background: white; /* Цвет фона, иначе будет прозрачным */
+    color: black; /* Цвет текста */
+    width: 100%;
+	height: 100px; 
+	z-index:5; /* индекс "приближения" шапки к нам, чтоб была над пустым дивом */
+}
+
+nav > h3{
+	
+	float: left;
+	font-family: "Abril Fatface";
+	font-size: 45px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	padding-left: 50px;
+}
+
+nav > h6 {
+	clear: both;
+	font-family: Lora;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	padding-left: 50px;
+	margin-bottom: 2%;
+}
+
+.menu {
+	float: right;
+	vertical-align: middle;
+	font-family: "Abril Fatface";
+	font-weight: bold;
+	padding-right: 50px;
+	
+	
+}
+
+ .menu li {
+	list-style: none;
+	display: inline; 
+	padding-right: 50px;
+	 position: relative;
+	 
+}
+
+
+.menu > li > ul {
+	position: absolute;
+	display:none;  
+	margin-left: 500%;
+}
+
+.menu a {
+	text-decoration: none;
+	color: black;
+	font-style: bold;
+}
+
+.menu > li:hover > ul {
+        display:block;  
+    }
+
+nav > hr {
+	clear: both;
+}
+
+.head-empty {
+	height: 83px;
+}
+
+.promo-box1 {
+	width: 100%;
+	height: 600px;
+	background-color: lightgrey;
+	background-image: url(../img/1.jpg);
+	background-attachment:fixed;
+	background-size: cover; /* Для масштабирования картинки на всю ширину дива*/
+	background-position: center center;
+    background-repeat: no-repeat;
+	color: black;
+	text-align: center;
+	
+	
+}
+
+.promo-box1 > h3 {
+	font-size: 22px;
+}
+
+.caption {
+	text-align: center;
+	font-family: "Arial Black";
+	vertical-align: middle;
+}
+
+
+.column-left {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.column-right {
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+.column-caption {
+	color: black;
+	font-family: "Abril Fatface";
+	font-weight: bold;
+}
+
+.column-describe {
+	color: black;
+	font-family: Lora;
+	font-style: italic;
+}
+
+
+.promo-box2 {
+	clear: both;
+	width: 100%;
+	height: 600px;
+	background-color: lightgrey;
+	background-image: url(../img/2.jpg);
+	background-attachment:fixed;
+	background-position: center center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	color: white;
+	text-align: center;
+}
+
+
+.footer {
+	clear: both;
+	position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: white; /* Цвет фона, иначе будет прозрачным */
+    color: black; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+	font-family: Lora;
+}
