@@ -56,6 +56,21 @@ nav > h6 {
 }
 
 
+.play_button {
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.play_button:hover {
+	transition: background-color 1s linear;
+	border: 1px solid red;
+	border-radius: 10px;
+	background-color: red;
+	color: white;
+}
+
+
 .menu > li > ul {
 	position: absolute;
 	display:none;  
@@ -90,13 +105,23 @@ nav > hr {
 	background-position: center center;
     background-repeat: no-repeat;
 	color: black;
-	text-align: center;
 	
 	
 }
 
+.promo-box1 > h1 {
+	position: absolute;  /* Для выравнивания по центру блока*/
+    top: 40%;            /* Для выравнивания по центру блока*/
+	left: 30%;
+	font-size: 70px;
+}
+
 .promo-box1 > h3 {
-	font-size: 22px;
+	font-size: 30px;
+	position: absolute;  /* Для выравнивания по центру блока*/
+    top: 60%;            /* Для выравнивания по центру блока*/
+	left: 30%;
+	clear: both;
 }
 
 .caption {
@@ -146,13 +171,37 @@ nav > hr {
 }
 
 
+.promo-box2 > h1 {
+	position: relative;  /* Для выравнивания по центру блока*/
+    top: 40%;            /* Для выравнивания по центру блока*/
+	left: 5%;
+	font-size: 70px;
+	margin: 0;
+	-webkit-text-stroke: 1px black; /* Тень текста */
+}
+
+.promo-box2 > h3 {
+	font-size: 40px;
+	position: relative;
+	top: 45%;
+	left: 5%;
+	clear: both;
+	margin: 0;
+	-webkit-text-stroke: 1px black;  /* Тень текста */
+}
+
+
+
 .footer {
 	clear: both;
 	position: fixed; /* Фиксированное положение */
     left: 0; bottom: 0; /* Левый нижний угол */
-    padding: 10px; /* Поля вокруг текста */
+    padding: 0px; /* Поля вокруг текста */
+	padding-left: 10px;
     background: white; /* Цвет фона, иначе будет прозрачным */
     color: black; /* Цвет текста */
     width: 100%; /* Ширина слоя */
 	font-family: Lora;
+	font-size: 13px;
+	text-align: center;
 }
