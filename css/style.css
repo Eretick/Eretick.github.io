@@ -249,7 +249,7 @@ nav > hr {
 
 /*--------------------------------Аккордеон----------------------------*/
 .ac-container{
-	width: 100%px;
+	width: auto;
 	margin: 10px auto 30px auto;
 }
 
@@ -269,6 +269,7 @@ nav > hr {
 		0px 0px 0px 1px rgba(155,155,155,0.3), 
 		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
 		0px 2px 2px rgba(0,0,0,0.1);
+	text-align: center;
 }
 
 .ac-container label:hover{
