@@ -112,7 +112,6 @@ nav > hr {
 	height: 600px;
 	background-color: lightgrey;
 	background-image: url(../img/1.jpg);
-	background-attachment:fixed;
 	background-size: cover; /* Для масштабирования картинки на всю ширину дива*/
 	background-position: center center;
     background-repeat: no-repeat;
@@ -172,7 +171,6 @@ nav > hr {
 	height: 600px;
 	background-color: lightgrey;
 	background-image: url(../img/2.jpg);
-	background-attachment:fixed;
 	background-position: center center;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -225,8 +223,7 @@ nav > hr {
 	height: 300px;
 	background-color: lightgrey;
 	background-image: url(../img/faq.jpg);
-	background-attachment:fixed;
-	background-position: center center;
+	background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
 	color: white;
